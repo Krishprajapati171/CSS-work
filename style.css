@@ -1,16 +1,45 @@
-p
+.my
 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
     text-align: center;
-    text-transform: capitalize;
-    font-family: 'Times New Roman', Times, serif;
+}
+.div-container
+{
+    height: 60px;
+    background-color: black;
+    color:rgb(188, 132, 28);
+    
 }
 
-.outer
+.div-container .new
 {
-    font-size: 25px;
+    background-color: rgb(188, 132, 28);
+}
+.div-main
+{
+    color: white;
+    padding-left: 15%;
+    word-spacing: 250px;    
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+.div-search
+{
+    text-align: end;
+
 }
 
-.inner
+
+
+
+.div-search
 {
-    font-size: 10px;
+    border: 45px;
+    border-style:thin;
 }
