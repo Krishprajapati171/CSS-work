@@ -1,0 +1,14 @@
+.myclass
+{
+    height: 180px;
+    width: 100px;
+    color: white;
+    background-image: url('img.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    text-wrap: balance; 
+    border: darkgoldenrod;
+    border-style:solid;
+    position: fixed;
+}
