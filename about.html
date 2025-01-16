@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* General Page Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;                     
+            color: #333;
+            background-color: #f5f5f5; /* Light background for better readability */
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+            animation: slideDown 1.2s ease-in-out;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 50px;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 800px; /* Center content with restricted width */
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .about-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .about-section p {
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        /* Back to Home Button */
+        .back-button {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #f0c040;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>About Me</h1>
+        
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <h2>Who I Am</h2>
+        <p>
+            Hello! I'm a passionate developer with a love for creating innovative and impactful solutions.
+            Over the years, I've honed my skills in web development, coding, and problem-solving. 
+            I enjoy working on challenging projects that push my limits and inspire growth.
+        </p>
+        <p>
+            When I'm not coding, you'll find me exploring the latest trends in technology,
+            playing video games, or reading books that fuel my imagination.
+        </p>
+        <p>
+            My ultimate goal is to make a meaningful impact in the tech world by delivering user-friendly and cutting-edge solutions.
+        </p>
+    </div>
+
+    <!-- Back to Home Button -->
+    <a href="VIKAS.html" class="back-button">Back to Home</a>
+</body>
+</html>

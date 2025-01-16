@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Tabs</title>
+    <style>
+        /* Full-page background section */
+        .background-section {
+            background-image: url('background.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Stack navigation and content */
+            align-items: center;
+            justify-content: center;
+            color:black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: Arial, sans-serif;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: absolute; /* Keep it at the top */
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            animation: slideDown 1.5s ease-out;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center; /* Center the navigation items */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Spacing between links */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f0c040; /* Highlight color on hover */
+        }
+
+        /* Section Content */
+        .background-section h1 {
+            font-size: 3rem;
+            animation: fadeInUp 2.5s ease-in-out;
+        }
+
+        .background-section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            text-align: center;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="projects.html" target="_blank">Projects</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Full-page Background Section -->
+    <div class="background-section">
+        <div>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Here you'll find a collection of my work, my journey as a developer, and the passion I bring to every project.</p>
+        </div>
+    </div>
+</body>
+</html>
